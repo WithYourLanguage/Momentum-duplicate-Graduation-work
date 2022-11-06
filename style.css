@@ -73,6 +73,7 @@
 #weather {
     font-family: 'LeferiPoint-WhiteObliqueA';
     float: right;
+    font-size : 20px; /*글자 크기를 250px 로 키워라*/
 
   
   
