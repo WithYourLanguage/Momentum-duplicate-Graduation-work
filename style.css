@@ -67,7 +67,7 @@
 #quote {
     text-align:center;
     font-family: 'LeferiPoint-WhiteObliqueA';
-    line-height : -10px; /*위에서부터 150px 띄워라*/
+    line-height : 0px; /*위에서부터 150px 띄워라*/
 }
 
 #weather {
@@ -81,4 +81,8 @@
 #todo-list {
     line-height : 0px; /*위에서부터 150px 띄워라*/
 
+}
+
+#Login-Text {
+    line-height : 240px;
 }

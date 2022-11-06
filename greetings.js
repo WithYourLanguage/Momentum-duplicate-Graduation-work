@@ -43,6 +43,7 @@ function paintGreetings(username) {
     todoList.classList.remove(HIDDEN_CLASSNAME, username) // todo 리스트
     todoForm.classList.remove(HIDDEN_CLASSNAME, username) // todo input box
     quote.classList.remove(HIDDEN_CLASSNAME, username) // 명언
+    weather.classList.remove(HIDDEN_CLASSNAME, username) // 날씨
     // 여기야 여기라구!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     const date = new Date();
     const hours = String(date.getHours()).padStart(2, "0");
@@ -69,6 +70,7 @@ const savedUsername = localStorage.getItem(USERNAME_KEY)
 if(savedUsername === null){
     loginForm.classList.remove(HIDDEN_CLASSNAME)
     loginText.classList.remove(HIDDEN_CLASSNAME)
+    
     loginForm.addEventListener("submit", onLoginSubmit)
 
 } else {
