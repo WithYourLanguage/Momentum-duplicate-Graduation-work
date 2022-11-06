@@ -5,6 +5,7 @@ const greeting = document.querySelector("#greeting")
 
 const clock = document.querySelector("#clock")
 
+const todoForm = document.querySelector("#todo-form")
 
 const todoList = document.querySelector("#todo-list")
 
@@ -39,7 +40,10 @@ function onLoginSubmit(event) {
 function paintGreetings(username) {
     greeting.classList.remove(HIDDEN_CLASSNAME)
     clock.classList.remove(HIDDEN_CLASSNAME, username) // 시계
-    todoList.classList.remove(HIDDEN_CLASSNAME, username)
+    todoList.classList.remove(HIDDEN_CLASSNAME, username) // todo 리스트
+    todoForm.classList.remove(HIDDEN_CLASSNAME, username) // todo input box
+    quote.classList.remove(HIDDEN_CLASSNAME, username) // 명언
+    // 여기야 여기라구!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
     const date = new Date();
     const hours = String(date.getHours()).padStart(2, "0");
     console.log(hours)
